@@ -1,0 +1,1 @@
+export default function SectorMarker({number,title}:{number:string;title:string}){return <div className="sector-marker"><span>SECTOR {number}</span><i/><b>{title}</b><small>LOCATION // MAPPED</small></div>}

@@ -1,0 +1,1 @@
+export default function WorldTransition({active}:{active:boolean}){return <div className={`world-transition ${active?'active':''}`} aria-hidden="true"><div className="transition-dust"/><div className="transition-label">DESCENDING // SECTOR 01</div></div>}
