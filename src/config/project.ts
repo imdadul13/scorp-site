@@ -5,6 +5,6 @@ export const PROJECT_STATE = {
   contractAddress: '',
   network: 'Solana',
   buyUrl: '',
-  xUrl: '',
-  telegramUrl: '',
+  xUrl: 'https://x.com/ScorpSect09',
+  telegramUrl: 'https://t.me/scorpdesert',
 } as const
