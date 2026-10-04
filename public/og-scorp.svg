@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" shape-rendering="crispEdges">
+  <rect width="1200" height="630" fill="#100d0b"/>
+  <circle cx="740" cy="245" r="130" fill="#c99c60" opacity=".72"/>
+  <path d="M0 425 190 354 360 428 530 330 730 422 930 337 1200 410v220H0z" fill="#26190f"/>
+  <path d="m0 495 220-62 230 92 230-82 270 64 250-71v194H0z" fill="#17110d"/>
+  <text x="104" y="245" fill="#ead9b9" font-family="monospace" font-size="90" font-weight="700" letter-spacing="8">SCORP</text>
+  <text x="110" y="308" fill="#e49b46" font-family="monospace" font-size="20" letter-spacing="5">THE DESERT IS WATCHING.</text>
+  <g fill="#392519">
+    <path d="M730 350h160v38H730zM690 330h55v25h-55zM875 330h55v25h-55zM690 385h28v52h-28zM742 385h28v58h-28zM850 385h28v58h-28zM902 385h28v52h-28z"/>
+    <path d="M790 320h48v35h-48zM775 170h35v120h-35zM740 135h35v35h-35zM775 100h35v35h-35zM810 80h35v35h-35zM845 65h32v30h-32z" fill="#634128"/>
+    <path d="M690 315h-65v32h65zM930 315h65v32h-65z"/>
+  </g>
+  <path d="M798 332h12v12h-12zM825 332h12v12h-12z" fill="#f0ad46"/>
+</svg>

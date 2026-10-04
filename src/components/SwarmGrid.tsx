@@ -18,6 +18,7 @@ export default function SwarmGrid() {
   }, [])
 
   function pointScorpions(event: PointerEvent<HTMLDivElement>) {
+    if (event.pointerType !== 'mouse') return
     const grid = event.currentTarget.querySelector('.swarm-grid')
     if (grid) {
       const bounds = grid.getBoundingClientRect()
@@ -33,6 +34,7 @@ export default function SwarmGrid() {
   }
 
   function resetScorpions(event: PointerEvent<HTMLDivElement>) {
+    event.currentTarget.querySelector('.swarm-grid')?.removeAttribute('style')
     event.currentTarget.querySelectorAll<HTMLElement>('.swarm-cell .scorpion').forEach(scorpion => scorpion.style.removeProperty('--turn'))
   }
 
