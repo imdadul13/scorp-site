@@ -85,7 +85,7 @@ export default function App() {
     <WorldTransition active={entering} />
     <button className="hidden-glyph" aria-label="Inspect anomalous pixel" onClick={event => { const target = event.currentTarget; target.classList.add('found'); window.setTimeout(() => target.classList.remove('found'), 1200) }}>⌑</button>
     <header className="nav">
-      <a className="brand" href="#top" aria-label="SCORP — return to the desert entrance"><span className="mini-mark"><PixelScorpion small /></span><span>SCORP<span className="brand-dot">.</span></span></a>
+      <a className="brand" href="#top" aria-label="SCORP — return to the desert entrance"><span className="mini-mark"><img src="/scorp-favicon-32.png" alt="" /></span><span>SCORP<span className="brand-dot">.</span></span></a>
       <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label="World locations">
         {nav.map(([label, id]) => <a key={id} href={`#${id}`} aria-current={activeNav === id ? 'location' : undefined} onClick={() => setMenuOpen(false)}>{label}<i className="nav-active-dot" /></a>)}
         <SocialLink channel="x" className="nav-social" >X <ExternalLink size={11} /></SocialLink>
@@ -110,6 +110,6 @@ export default function App() {
     <section className="archive section sector" id="sector-04"><SectorMarker number="04" title="THE ARCHIVE" status="CLASSIFIED" /><div className="section-heading"><h2>SCORP <em>{'//'} ARCHIVE</em></h2><p className="mono small">RESTRICTED MATERIAL {'//'} 6 RECORDS</p></div><ArchiveSystem /></section>
     <section className="token section sector" id="sector-05"><SectorMarker number="05" title="THE STING" status={PROJECT_STATE.launched ? 'ACTIVE' : 'LOCKED'} /><div className="section-heading"><h2>THE <em>STING</em></h2><p className="mono small">DETAILS WILL SURFACE WHEN THEY SURFACE</p></div><TokenStatus /></section>
     <section className="terminal-section section" id="field-terminal"><SectorMarker number="09" title="FIELD TERMINAL" status="CONNECTED" /><div className="section-heading"><h2>SCORP <em>{'//'} FIELD TERMINAL</em></h2><p className="mono small">LOCAL CONNECTION {'//'} NO TRACE</p></div><FieldTerminal /></section>
-    <footer id="footer"><div className="footer-brand"><span className="mini-mark"><PixelScorpion small /></span><div><b>SCORP</b><span>THE DESERT IS WATCHING.</span></div></div><div className="footer-links"><SocialLink channel="x">X <ExternalLink size={11} /></SocialLink><SocialLink channel="telegram">TELEGRAM <ExternalLink size={11} /></SocialLink><span><VolumeX size={14} /> SOUND OFF</span></div><span className="copyright">© 2026 SCORP</span><span className="footer-coord">{entered ? 'SECTOR 01 // YOU ARE HERE' : 'SIGNAL WILL RETURN'}</span></footer>
+    <footer id="footer"><div className="footer-brand"><span className="mini-mark"><img src="/scorp-favicon-32.png" alt="" /></span><div><b>SCORP</b><span>THE DESERT IS WATCHING.</span></div></div><div className="footer-links"><SocialLink channel="x">X <ExternalLink size={11} /></SocialLink><SocialLink channel="telegram">TELEGRAM <ExternalLink size={11} /></SocialLink><span><VolumeX size={14} /> SOUND OFF</span></div><span className="copyright">© 2026 SCORP</span><span className="footer-coord">{entered ? 'SECTOR 01 // YOU ARE HERE' : 'SIGNAL WILL RETURN'}</span></footer>
   </main>
 }
